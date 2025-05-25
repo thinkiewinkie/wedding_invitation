@@ -1,0 +1,32 @@
+.nameGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.jumbo {
+  width: 100%;
+  font-family: "Dancing Script Variable";
+}
+.left {
+  font-size: 6rem;
+  text-align: left;
+}
+.center {
+  font-size: 4rem;
+  text-align: center;
+}
+.right {
+  font-size: 6rem;
+  text-align: right;
+}
+.text {
+  gap: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.text p:nth-child(2) {
+  font-style: italic;
+}

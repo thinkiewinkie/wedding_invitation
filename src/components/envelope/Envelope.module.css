@@ -1,0 +1,75 @@
+.envelope {
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dancing Script Variable";
+}
+.top {
+  height: 48%;
+  background-color: #fcdccd;
+}
+.line {
+  height: 4%;
+  width: 100%;
+  background-color: #aa806c;
+}
+.bottom {
+  height: 48%;
+  background-color: #fcdccd;
+}
+.trigger {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.trigger button {
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #fcdccd;
+  background: none;
+  animation: bounce 1000ms infinite ease;
+  font-family: "Dancing Script Variable";
+}
+.content {
+  gap: 20px;
+  width: 150px;
+  height: 150px;
+  color: #fcdccd;
+  display: inherit;
+  font-weight: 600;
+  border-radius: 100px;
+  align-items: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  background-color: #aa806c;
+}
+.content h3 {
+  text-align: center;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+}

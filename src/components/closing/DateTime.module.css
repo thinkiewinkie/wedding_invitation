@@ -1,0 +1,52 @@
+.dateTimeContainer {
+  gap: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.dividerContainer {
+  gap: 5px;
+  display: flex;
+  height: 100%;
+  width: max-content;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.line {
+  flex: 1;
+  width: 2px;
+  background-color: #886a5c;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #886a5c;
+}
+.circle:nth-child(2),
+.circle:nth-child(4) {
+  width: 8px;
+  height: 8px;
+}
+.date {
+  text-align: right;
+}
+.day {
+  font-weight: 600;
+  font-size: 4rem;
+  font-family: "Dancing Script Variable";
+}
+.calendar {
+  font-size: 2rem;
+}
+.time {
+  font-size: 2rem;
+  text-align: left;
+}
+.clock {
+  font-size: 1.2rem;
+}
+.text {
+  margin-top: 10px;
+}

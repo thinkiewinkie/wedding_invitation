@@ -1,0 +1,25 @@
+.content {
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  color: #886a5c;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+  gap: 10px;
+  width: 320px;
+  padding: 10px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

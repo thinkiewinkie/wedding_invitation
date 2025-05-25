@@ -1,0 +1,23 @@
+.titleBox {
+  padding: 5px;
+  color: #fcdccd;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  background-color: #886a5c;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.families {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.parent {
+  font-size: 1.2rem;
+}
+.conjunction,
+.name {
+  font-size: 2rem;
+  font-family: "Dancing Script Variable";
+}
