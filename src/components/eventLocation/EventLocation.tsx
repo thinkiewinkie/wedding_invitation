@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Container from "../container/Container";
+import denah from "../../assets/images/denah.png";
 import styles from "./EventLocation.module.css";
 
 const EventLocation = () => {
@@ -21,7 +22,7 @@ const EventLocation = () => {
         transition={{ duration: 0.5 }}
         className={styles.mapContainer}
       >
-        <img src="/images/denah.png" alt="denah_resepsi" loading="lazy" />
+        <img src={denah} alt="denah_resepsi" loading="lazy" />
       </motion.div>
       <motion.p
         initial={{ scale: 0 }}

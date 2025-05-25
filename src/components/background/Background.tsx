@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import top_decorator from "../../assets/images/top_decorator.png";
+import bottom_decorator from "../../assets/images/bottom_decorator.png";
 import styles from "./Background.module.css";
 
 const Background = () => {
@@ -12,7 +14,7 @@ const Background = () => {
       >
         <motion.div>
           <img
-            src="/images/top_decorator.png"
+            src={top_decorator}
             alt="https://img.freepik.com/free-vector/pink-purple-floral-garden-background-with-watercolor_65186-3173.jpg?semt=ais_hybrid&w=740"
             loading="lazy"
           />
@@ -25,7 +27,7 @@ const Background = () => {
         className={styles.bottomDecorator}
       >
         <img
-          src="/images/bottom_decorator.png"
+          src={bottom_decorator}
           alt="https://img.freepik.com/free-vector/pink-purple-floral-garden-background-with-watercolor_65186-3173.jpg?semt=ais_hybrid&w=740"
           loading="lazy"
         />
