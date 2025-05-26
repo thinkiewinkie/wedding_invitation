@@ -50,6 +50,7 @@ const EventLocation = () => {
         atau
       </motion.p>
       <motion.a
+        title="Lihat peta"
         href="https://www.google.com/maps/dir/?api=1&destination=-5.034009249058135,104.8842453623207"
         target="_blank"
         initial={{ y: 100, opacity: 0 }}

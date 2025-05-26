@@ -7,7 +7,7 @@ export const AudioContext = createContext<AudioContextType | undefined>(
 
 export const AudioProvider = ({ children }: { children: React.ReactNode }) => {
   const soundUrl =
-    "https://raw.githubusercontent.com/henhen02/wedding_invitation/main/the-moment_kenny-g.m4a";
+    "https://raw.githubusercontent.com/henhen02/wedding_invitation/main/Rizky Febian Feat. Mahalini - Bermuara [cut_60sec].mp3";
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isMuted, setIsMuted] = useState<boolean>(false);
   const [audioSrc, setAudioSrc] = useState<string | null>(null);

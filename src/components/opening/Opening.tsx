@@ -2,7 +2,7 @@ import Container from "../container/Container";
 import styles from "./Opening.module.css";
 import { motion } from "framer-motion";
 
-const Opening = () => {
+const Opening = ({ name }: { name: string | null }) => {
   return (
     <Container>
       <motion.div
@@ -48,9 +48,18 @@ const Opening = () => {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 100, opacity: 0 }}
         transition={{ duration: 1, delay: 1.5 }}
+        className={styles.guest}
+      >
+        <p>Mengundang Saudara/i</p>
+        {name && <p>{name}</p>}
+      </motion.div>
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: 100, opacity: 0 }}
+        transition={{ duration: 1, delay: 2 }}
         className={styles.text}
       >
-        <p>Rabu, 22 Juni 2025</p>
         <p>
           "Dan Kami menciptakan kamu
           <br />

@@ -20,12 +20,27 @@
 }
 .anchor {
   color: #886a5c;
-  font-weight: 600;
-  text-decoration: underline;
+  text-decoration: none;
+  animation: bounce 1000ms infinite ease;
 }
 .anchor::before {
   content: "--- ";
 }
 .anchor::after {
   content: " ---";
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.1);
+  }
 }

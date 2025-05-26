@@ -19,6 +19,14 @@
   font-size: 6rem;
   text-align: right;
 }
+.guest {
+  border-bottom: 1px solid #886a5c;
+  text-align: center;
+}
+.guest p:last-child {
+  margin-top: 5px;
+  font-size: 20px;
+}
 .text {
   gap: 10px;
   display: flex;
@@ -27,6 +35,6 @@
   flex-direction: column;
   justify-content: center;
 }
-.text p:nth-child(2) {
+.text p:first-child {
   font-style: italic;
 }

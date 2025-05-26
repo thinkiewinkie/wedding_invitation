@@ -22,9 +22,11 @@ const sectionList: string[] = [
   "closing",
   "thankyou",
 ];
-const interval: number = 15000;
+const interval: number = 12000;
 
 const App = () => {
+  const params = new URLSearchParams(window.location.search);
+
   const { isMuted, toggleMute } = useAudio();
   const [currSection, setCurrSection] = useState<number>(0);
   const [start, setStart] = useState<boolean>(false);
@@ -67,8 +69,6 @@ const App = () => {
 
   const handleReset = () => {
     setCurrSection(0);
-    // setStart(false);
-    // setShowSections(false);
     setIsPaused(false);
     if (intervalId) clearInterval(intervalId);
     startInterval();
@@ -87,7 +87,7 @@ const App = () => {
       <AnimatePresence>
         {!start && currSection === 0 && (
           <motion.div key={"envelope"}>
-            <Envelope onStart={handleStart} />
+            <Envelope onStart={handleStart} name={params.get("name")} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -120,11 +120,11 @@ const App = () => {
           <Background />
           <AnimatePresence mode="wait">
             <motion.div key={section}>
-              {section === "opening" && <Opening />}
-              {section === "family" && <Family />}
+              {section === "opening" && <Opening name={params.get("name")} />}
+              {section === "family" && <Family name={params.get("name")} />}
               {section === "event location" && <EventLocation />}
-              {section === "closing" && <DateTime />}
-              {section === "thankyou" && <Thankyou />}
+              {section === "closing" && <DateTime name={params.get("name")} />}
+              {section === "thankyou" && <Thankyou name={params.get("name")} />}
             </motion.div>
           </AnimatePresence>
         </>

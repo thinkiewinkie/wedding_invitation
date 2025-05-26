@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Container from "../container/Container";
 import styles from "./DateTime.module.css";
 
-const DateTime = () => {
+const DateTime = ({ name }: { name: string | null }) => {
   return (
     <Container>
       <motion.div
@@ -19,7 +19,7 @@ const DateTime = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className={styles.date}
         >
-          <p className={styles.day}>Rabu</p>
+          <p className={styles.day}>Minggu</p>
           <motion.p className={styles.calendar}>
             22
             <br />
@@ -27,7 +27,7 @@ const DateTime = () => {
             <br />
             2025
           </motion.p>
-          <motion.p>{`(29 Dzulhijah 1446 H)`}</motion.p>
+          <motion.p>{`(26 Dzulhijah 1446 H)`}</motion.p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -69,15 +69,15 @@ const DateTime = () => {
         Bismillaahirrohmaanirrohiim
         <br />
         <br />
-        Ya Allah, satukanlah hati kedua mempelai ini sebagaimana Engkau telah
-        menyatukan hati Adam dan Hawa, Yusuf dan Zulaikha, serta sebagaimana
-        Engkau telah menyatukan hati Baginda Muhammad Shallallahu Alaihi
-        Wasallam dan Siti Khadijah.
+        Ya Allah, satukanlah hati kami sebagaimana Engkau telah menyatukan hati
+        Adam dan Hawa, Yusuf dan Zulaikha, serta sebagaimana Engkau telah
+        menyatukan hati Baginda Muhammad Shallallahu Alaihi Wasallam dan Siti
+        Khadijah.
         <br />
         <br />
-        Kami memohon doa restu Bapak/Ibu/Saudara/i agar jalinan kasih antara
-        kedua mempelai ini kekal abadi dalam keberkahan dan keridaan Allah
-        Subhanahu Wa Ta'ala.
+        Kami memohon doa restu Saudara/i{name ? ` ${name} ` : " "}untuk
+        terwujudnya jalinan kasih yang kekal abadi dalam keberkahan dan keridaan
+        Allah Subhanahu Wa Ta'ala.
         <br />
         <br />
         Aamiin Yaa Rabbal 'Aalamiin.

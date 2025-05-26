@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Container from "../container/Container";
 import styles from "./Thankyou.module.css";
 
-const Thankyou = () => {
+const Thankyou = ({ name }: { name: string | null }) => {
   return (
     <Container>
       <motion.p
@@ -12,9 +12,9 @@ const Thankyou = () => {
         transition={{ duration: 1 }}
         className={styles.text}
       >
-        Dengan segala kerendahan hati, kami mengharapkan kehadiran
-        Bapak/Ibu/Saudara/i untuk berbagi kebahagiaan dan memberikan doa restu
-        di hari pernikahan kami
+        Besar harapan kami agar Saudara/i {name ? ` ${name} ` : " "} dapat hadir
+        untuk berbagi kebahagiaan dan memberikan doa restu di hari pernikahan
+        kami
       </motion.p>
       <motion.p
         initial={{ x: -100, opacity: 0 }}

@@ -14,10 +14,13 @@
   justify-content: center;
 }
 .parent {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .conjunction,
 .name {
   font-size: 2rem;
   font-family: "Dancing Script Variable";
+}
+.date {
+  font-size: 1.2rem;
 }
